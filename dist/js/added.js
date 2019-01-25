@@ -3,7 +3,7 @@ $(document).ready(function() {
     e.preventDefault();
 
     $.ajax({
-      url: 'http://localhost:3000/api/users/landing',
+      url: 'https://ucharify-api.herokuapp.com/api/users/landing',
       type: 'post',
       data: $('#email-form').serialize(),
       success: function(data) {
