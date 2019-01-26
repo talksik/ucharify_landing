@@ -2,9 +2,39 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 /* All that I added for styles */
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
+
+#countdown {
+  margin: 100px;
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #BDBDBD;
+}
+.time-factor {
+  margin: 0;
+  padding: 1em;
+
+  flex: 0 0 120px;
+  border-right: 1px solid #B2EBF2;
+  
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+
+}
+.right-most {
+  border: none;
+}
+.number-text {
+  font-size: 2em;
+  color: #212121;
+}
+
+
 
 .join-paragraph {
   font-size: 0.8em;

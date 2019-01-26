@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // email submission
   $('#email-form').submit(function(e) {
     e.preventDefault();
 
@@ -22,5 +23,19 @@ $(document).ready(function() {
           .slideUp();
       }
     });
+  });
+
+  // Countdown
+  $('#countdown').countdown('2019/03/15', function(event) {
+    $(this).text(event.strftime('%D days %H:%M:%S'));
+    var $this = $(this).html(
+      event.strftime(`
+    <div class="time-factor"><span class="number-text">%w</span><span>weeks</span></div>
+    <div class="time-factor"><span class="number-text">%d</span><span>days</span></div>
+    <div class="time-factor"><span class="number-text">%H</span><span>hr</span></div>
+    <div class="time-factor"><span class="number-text">%M</span><span>min</span></div>
+    <div class="time-factor right-most"><span class="number-text">%S</span><span>sec</span></div>
+    `)
+    );
   });
 });
