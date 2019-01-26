@@ -28,7 +28,7 @@ $(document).ready(function() {
         $('#popup')
           .text('Email invalid or exists')
           .slideDown()
-          .delay(4000)
+          .delay(3000)
           .slideUp();
       }
     });
