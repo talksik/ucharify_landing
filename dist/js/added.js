@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  // popup when they try to log in or signup
+  $('#login, #signup').click(function() {
+    $('#popup')
+      .text('Coming Soon!')
+      .slideDown()
+      .delay(4000)
+      .slideUp();
+  });
+
   // email submission
   $('#email-form').submit(function(e) {
     e.preventDefault();
