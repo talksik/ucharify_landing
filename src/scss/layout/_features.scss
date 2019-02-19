@@ -1,49 +1,58 @@
 .features {
 
-    .section-title {
-        margin-bottom: 48px;
-    }
+	.section-title {
+		position: relative;
+		margin-bottom: 32px;
+		max-width: 620px;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 0;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 0;
+			width: 76px;
+			height: 85px;
+			background-image: url('../images/features-quote-illustration.svg');
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			z-index: -1
+		}
+	}
+}
+
+.features-illustration {
+	margin-bottom: 32px;
 }
 
 .features-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -12px;
+	margin-right: -12px;
     margin-left: -12px;
+	margin-top: -16px;
 
-    &:first-child {
-        margin-top: -12px;
-    }
+	&:last-of-type {
+		margin-bottom: -16px;
+	}
 
-    &:last-child {
-        margin-bottom: -12px;
+    &:not(:last-of-type) {
+        margin-bottom: 16px;
     }
 }
 
 .feature {
-    padding: 12px;
-    width: 276px;
-    max-width: 276px;
+    padding: 16px 12px;
+    width: 364px;
+    max-width: 364px;
     flex-grow: 1;
 }
 
 .feature-inner {
-    position: relative;
     height: 100%;
-    background: color(bg, 1);
-    padding: 40px 24px;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        @include shadow;
-        mix-blend-mode: multiply;
-    }
 }
 
 .feature-icon {
@@ -53,15 +62,40 @@
 
 @include media( '>medium' ) {
 
-    .features {
+	.features {
 
-        .section-title {
-            margin-bottom: 56px;
-        }
+		.section-title {
+			margin-bottom: 64px;
 
-        .section-inner {
-            padding-top: 56px;
-            padding-bottom: 64px;
-        }
+			&::before {
+				top: -45px;
+				width: 87px;
+				height: 112px;
+			}
+		}
+	}
+
+	.features-illustration {
+		margin-bottom: 64px;
+	}
+
+	.features-wrap {
+		margin-right: -24px;
+	    margin-left: -24px;
+		margin-top: -32px;
+
+		&:last-of-type {
+			margin-bottom: -32px;
+		}
+
+	    &:not(:last-of-type) {
+	        margin-bottom: 32px;
+	    }
+	}
+
+    .feature {
+        padding: 32px 24px;
+		width: 388px;
+		max-width: 388px;
     }
 }
