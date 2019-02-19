@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	color: color(typography, 2);
+	color: color(typography, 3);
 	font-size: 1rem;
 }
 
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6,
 	@if ( get-font-family(heading) != get-font-family(base) ) {
 		@include font-family(heading);
 	}
-	@include font-weight(bold);
+	@include font-weight(semibold);
 }
 
 h1,
@@ -101,10 +101,10 @@ h6,
 }
 
 .text-light {
-	color: color(typography, 2i);
+	color: color(typography, 3);
 
 	a {
-		color: color(typography, 2i);
+		color: color(typography, 3);
 	}
 }
 
@@ -162,7 +162,7 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	color: color(typography, 3);
+	color: color(typography, 2);
 	font-style: italic;
 	margin-top: 24px;
 	margin-bottom: 24px;
@@ -240,7 +240,7 @@ small {
 
 b,
 strong {
-	@include font-weight(bold);
+	@include font-weight(semibold);
 }
 
 button,

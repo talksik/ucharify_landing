@@ -1,36 +1,53 @@
-(function() {
-  const doc = document.documentElement;
+(function () {
+  const doc = document
+  const rootEl = doc.documentElement
+  const body = doc.body
+  /* global ScrollReveal */
+  const sr = window.sr = ScrollReveal({ mobile: false })
 
-  doc.classList.remove('no-js');
-  doc.classList.add('js');
+  rootEl.classList.remove('no-js')
+  rootEl.classList.add('js')
+
+  window.addEventListener('load', function () {
+    body.classList.add('is-loaded')
+  })
 
   // Reveal animations
-  if (document.body.classList.contains('has-animations')) {
-    /* global ScrollReveal */
-    const sr = (window.sr = ScrollReveal());
-
-    sr.reveal('.hero-title, .hero-paragraph, .hero-cta', {
-      duration: 1000,
-      distance: '40px',
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+  function revealAnimations () {
+    sr.reveal('.features .section-title, .features-illustration, .feature', {
+      delay: 300,
+      duration: 600,
+      distance: '60px',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
       origin: 'bottom',
+      viewFactor: 0.2,
       interval: 150
-    });
-
-    sr.reveal('.feature, .pricing-table', {
+    })
+    sr.reveal('.feature-extended:nth-child(odd) .feature-extended-body, .feature-extended:nth-child(even) .feature-extended-image', {
       duration: 600,
       distance: '40px',
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
-      interval: 100,
-      origin: 'bottom',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      origin: 'right',
       viewFactor: 0.5
-    });
-
-    sr.reveal('.feature-extended-image', {
+    })
+    sr.reveal('.feature-extended:nth-child(even) .feature-extended-body, .feature-extended:nth-child(odd) .feature-extended-image', {
       duration: 600,
-      scale: 0.9,
-      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+      distance: '40px',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      origin: 'left',
       viewFactor: 0.5
-    });
+    })
+    sr.reveal('.pricing-table, .testimonial, .cta-inner', {
+      duration: 600,
+      distance: '60px',
+      easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
+      origin: 'bottom',
+      viewFactor: 0.5,
+      interval: 150
+    })
   }
-})();
+
+  if (body.classList.contains('has-animations')) {
+    window.addEventListener('load', revealAnimations)
+  }
+}())
