@@ -19,3 +19,19 @@
 .margin-top {
     margin-top: 3em;
 }
+
+
+.how-it-works-container {
+	padding: 60px;
+	background-color: #161E2A;
+	color: white;
+}
+
+.how-it-works-title {
+    color: white;
+}
+
+.testimonial-position {
+    margin-left: 10px;
+    font-size: 13px;
+}
