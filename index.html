@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="dist/images/logo_green.png">
 	<title>Ucharify</title>
 	<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Playfair+Display:700" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/style.css">
@@ -14,6 +15,17 @@
 
 	<!-- Chart.js CDN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133343343-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-133343343-1');
+	</script>
 </head>
 
 <body class="is-boxed has-animations">
@@ -24,7 +36,7 @@
 					<div class="brand header-brand">
 						<h1 class="m-0">
 							<a href="#">
-								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
+								<img class="header-logo-image logo" src="dist/images/logo_white.png" alt="Logo">
 							</a>
 						</h1>
 					</div>
@@ -39,8 +51,9 @@
 						<div class="hero-copy">
 							<h1 class="hero-title mt-0">Donate where it really matters</h1>
 							<p class="hero-paragraph">Our platform connects donors with small charities to maximize
-								impact over a
-								longer period of time. Reach out to more places and lives, see the impact every day.</p>
+								the impact from every dollar. Reach out to more places and lives, see the impact every
+								day.
+							</p>
 							<div class="hero-cta">
 								<!-- <a class="button button-primary button-wide-mobile" href="#">Early access</a> -->
 							</div>
@@ -79,8 +92,8 @@
 									</div>
 									<div class="feature-content">
 										<h4 class="feature-title mt-0 mb-8">Value Matching</h4>
-										<p class="text-sm mb-0">Focus on making an impact on things that you care about.
-											Trust only those
+										<p class="text-sm mb-0">Focus on the people you care about most.
+											Give to
 											organizations that understand you.</p>
 									</div>
 								</div>
@@ -92,9 +105,9 @@
 									</div>
 									<div class="feature-content">
 										<h4 class="feature-title mt-0 mb-8">Payments</h4>
-										<p class="text-sm mb-0">We're ensuring that it gets in the right hands, and
-											maximizing your tax
-											deductions.</p>
+										<p class="text-sm mb-0">We're ensuring that it safely reaches the right hands,
+											and
+											is easy to track.</p>
 									</div>
 								</div>
 							</div>
@@ -107,8 +120,8 @@
 									</div>
 									<div class="feature-content">
 										<h4 class="feature-title mt-0 mb-8">Trust and Engagement</h4>
-										<p class="text-sm mb-0">Track where your money is going and closely engage with
-											those organizations.
+										<p class="text-sm mb-0">Build a relationship with your charities for long term
+											impact.
 										</p>
 									</div>
 								</div>
@@ -120,7 +133,7 @@
 									</div>
 									<div class="feature-content">
 										<h4 class="feature-title mt-0 mb-8">Global Impact</h4>
-										<p class="text-sm mb-0">We easily distribute your money so that you can reach
+										<p class="text-sm mb-0">Easily distribute your money so that you can reach
 											more people.</p>
 									</div>
 								</div>
@@ -135,7 +148,8 @@
 					<div class="features-extended-header how-it-works-container text-center ">
 						<div class="container-sm">
 							<h2 class="section-title how-it-works-title mt-0">How it Works</h2>
-							<p class="section-paragraph">One place to track and manage all of your grants, and maximize
+							<p class="section-paragraph">Your one place to track and manage all of your grants, and
+								maximize
 								your impact globally.</p>
 						</div>
 					</div>
@@ -143,7 +157,7 @@
 						<div class="container">
 							<div class="feature-extended">
 								<div class="feature-extended-image is-revealing">
-									<img src="dist/images/feature-extended-01.svg" alt="Feature extended 01">
+									<img src="dist/images/grants_list.png" alt="Feature extended 01">
 								</div>
 								<div class="feature-extended-body is-revealing">
 									<h3 class="mt-0">Create a Grant.</h3>
@@ -157,10 +171,10 @@
 							</div>
 							<div class="feature-extended">
 								<div class="feature-extended-image is-revealing">
-									<img src="dist/images/feature-extended-02.svg" alt="Feature extended 02">
+									<img src="dist/images/grant_detail.png" alt="Feature extended 02">
 								</div>
 								<div class="feature-extended-body is-revealing">
-									<h3 class="mt-0">Stay Engaged with Your Money.</h3>
+									<h3 class="mt-0">Stay engaged with your orgs.</h3>
 									<p class="mb-0">Easily keep track of what your charities are doing with your money.
 										Check out <b>live media updates</b> along with other <b>transparent metrics.</b>
 									</p>
@@ -168,7 +182,7 @@
 							</div>
 							<div class="feature-extended">
 								<div class="feature-extended-image is-revealing">
-									<img src="dist/images/feature-extended-03.svg" alt="Feature extended 03">
+									<img src="dist/images/payment_history.png" alt="Feature extended 03">
 								</div>
 								<div class="feature-extended-body is-revealing">
 									<h3 class="mt-0">We keep payments simple.</h3>
@@ -183,7 +197,7 @@
 				</div>
 			</section>
 
-			<section class="pricing section text-light">
+			<!-- <section class="pricing section text-light">
 				<div class="container">
 					<div class="pricing-inner section-inner">
 						<h2 class="section-title mt-0 text-center">Simple, transarent pricing</h2>
@@ -281,7 +295,9 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
+
+			<hr>
 
 			<section class="testimonials section">
 				<div class="container">
@@ -319,12 +335,14 @@
 											<img src="dist/images/5-stars.svg" alt="Rating">
 										</div>
 										<div class="testimonial-body">
-											<p class="text-sm m-0">I want everyone to feel the way I do when I give to
-												someone, on a consistent basis. My family runs an animal shelter in
-												North India out
-												of our own pockets. I know that the millions of people giving to
-												Redcross would be more satisfied supporting meaningful missions around
-												the world.
+											<p class="text-sm m-0">The feeling from giving on a consistent basis is
+												something I want everyone to experience. My family runs a small animal
+												shelter in
+												North India; I know that people will be more satisfied supporting
+												hidden, but purposeful,
+												missions around
+												the world. I'm merely a visionary bringing that awareness into the
+												world.
 											</p>
 										</div>
 									</div>
@@ -370,7 +388,8 @@
 			<section class="cta section text-light">
 				<div class="container">
 					<div class="cta-inner section-inner is-revealing">
-						<h3 class="section-title mt-0">Contact us with any inquiries.</h3>
+						<h2 class="section-title mt-0">Contact us with any
+							inquiries.</h2>
 						<div class="cta-cta">
 							<a class="button button-wide-mobile" href="#">team@ucharify.com</a>
 						</div>
@@ -379,7 +398,7 @@
 			</section>
 		</main>
 
-		<footer class="site-footer">
+		<!-- <footer class="site-footer">
 			<div class="container">
 				<div class="site-footer-inner">
 					<div class="site-footer-top">
@@ -504,7 +523,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 	</div>
 
 	<script src="dist/js/main.min.js"></script>
