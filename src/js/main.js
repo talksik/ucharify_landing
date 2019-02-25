@@ -26,7 +26,7 @@
       viewFactor: 0.5
     });
 
-    sr.reveal('.feature-extended-image', {
+    sr.reveal('.feature-extended-image, .testimonial', {
       duration: 600,
       scale: 0.9,
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
