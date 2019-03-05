@@ -1,121 +1,118 @@
-
 /* All that I added for styles */
+.material-icons {
+	font-size: 40px !important;
+	color: teal;
+}
+
 .logo {
-    height: 80px;
-    width: 80px;
-  }
-  
-  #countdown {
-    margin: 120px 0 100px 0;
-    
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: #BDBDBD;
-  }
-  .time-factor {
-    margin: 0;
-    padding: 1em;
-  
-    flex: 0 0 120px;
-    border-right: 1px solid #B2EBF2;
-    
-    display: flex;
-    flex-direction: column;
-    min-width: 120px;
-  
-  }
-  .right-most {
-    border: none;
-  }
-  .number-text {
-    font-size: 2em;
-    color: #1E4D92;
-  }
-  
-  
-  
-  .join-paragraph {
-    font-size: 0.8em;
-  }
-  .hero-cta {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-  }
-  .email-input {
-    margin-right: 5px;
-    padding: 5px 10px;
-    border: none;
-    min-width: 250px;
-    box-shadow: 0 8px 24px rgba(32,43,54,0.12);
-  }
-  #popup {
-    position: fixed;
-    top: 30px;
-    margin-top: 1em;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    background-color: rgb(49, 49, 49);
-    color: white;
-    font-size: 0.8em;
-    padding: 0.2em 0.7em;
-    border-radius: 3px;
-    display: none;
-  }
-  
-  
-  .hero-media video {
-    max-width: 100%;
-  }
-  
-  .slideshow-container {
-    box-shadow: 0 8px 24px rgba(32,43,54,0.12);
-  }
-  .mySlides {
-    display:none;
-    width: 100%;
-    height: 100%;
-  }
-  
-  
-  .sponsor {
-    min-height: 40px;
-    max-width: 200px;
-    max-height: 100px;
-    /* max-width: 200px;
+	height: 80px;
+	width: 80px;
+}
+
+#countdown {
+	margin: 120px 0 100px 0;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	color: #bdbdbd;
+}
+.time-factor {
+	margin: 0;
+	padding: 1em;
+
+	flex: 0 0 120px;
+	border-right: 1px solid #b2ebf2;
+
+	display: flex;
+	flex-direction: column;
+	min-width: 120px;
+}
+.right-most {
+	border: none;
+}
+.number-text {
+	font-size: 2em;
+	color: #1e4d92;
+}
+
+.join-paragraph {
+	font-size: 0.8em;
+}
+.hero-cta {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+.email-input {
+	margin-right: 5px;
+	padding: 5px 10px;
+	border: none;
+	min-width: 250px;
+	box-shadow: 0 8px 24px rgba(32, 43, 54, 0.12);
+}
+#popup {
+	position: fixed;
+	top: 30px;
+	margin-top: 1em;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	background-color: rgb(49, 49, 49);
+	color: white;
+	font-size: 0.8em;
+	padding: 0.2em 0.7em;
+	border-radius: 3px;
+	display: none;
+}
+
+.hero-media video {
+	max-width: 100%;
+}
+
+.slideshow-container {
+	box-shadow: 0 8px 24px rgba(32, 43, 54, 0.12);
+}
+.mySlides {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.sponsor {
+	min-height: 40px;
+	max-width: 200px;
+	max-height: 100px;
+	/* max-width: 200px;
     height: 80px; */
-  }
-  
-  
-  .testimonial-position {
-    margin-left: 10px;
-    font-size: 13px;
-  }
+}
 
-  
-  .site-footer {
-    background: #0f8a9d;
-    background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%);
-    /* -webkit-transform-origin: 0; */
-    transform-origin: 0;
-    /* -webkit-transform: skewY(-12deg); */
-    /* transform: skewY(-12deg); */
-  }
-  .email-me {
-    font-size: 1.5em;
-    color: white;
-  }
+.testimonial-position {
+	margin-left: 10px;
+	font-size: 13px;
+}
 
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+.site-footer {
+	background: #0f8a9d;
+	background: linear-gradient(57deg, #00c6a7 0%, #1e4d92 100%);
+	/* -webkit-transform-origin: 0; */
+	transform-origin: 0;
+	/* -webkit-transform: skewY(-12deg); */
+	/* transform: skewY(-12deg); */
+}
+.email-me {
+	font-size: 1.5em;
+	color: white;
+}
 
-  .small-white-font {
-    font-size: 1em;
-    color: #f3e5f5;
-  }
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.small-white-font {
+	font-size: 1em;
+	color: #f3e5f5;
+}
