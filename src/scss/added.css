@@ -106,6 +106,20 @@
 	font-size: 13px;
 }
 
+.testimonial-footer-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* margin-top: 1em; */
+}
+
+.linkedin-icon {
+	height: 30px;
+	width: 30px;
+	margin: 10px;
+}
+
 .site-footer {
 	background: #0f8a9d;
 	background: linear-gradient(57deg, #00c6a7 0%, #1e4d92 100%);
