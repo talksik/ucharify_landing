@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // popup when they try to log in or signup
-  $('#login, #signup, .social-media-icons').click(function() {
+  $('.social-media-icons').click(function() {
     $('#popup')
       .text('Coming Soon!')
       .slideDown()
@@ -13,10 +13,10 @@ $(document).ready(function() {
     e.preventDefault();
 
     $('#popup')
-          .text('Added to list! Thank you for joining!')
-          .slideDown()
-          .delay(4000)
-          .slideUp();
+      .text('Added to list! Thank you for joining!')
+      .slideDown()
+      .delay(4000)
+      .slideUp();
 
     $.ajax({
       url: 'https://ucharify-api.herokuapp.com/api/users/landing',
