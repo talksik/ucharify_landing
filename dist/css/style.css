@@ -1510,12 +1510,17 @@ main {
 }
 .footer-brand,
 .footer-links,
-.footer-social-links,
-.footer-copyright {
+.footer-social-links {
 	flex: none;
 	width: 100%;
 	display: inline-flex;
 	justify-content: center;
+}
+.footer-copyright {
+	flex: none;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
 }
 .footer-brand,
 .footer-links,
@@ -1542,8 +1547,7 @@ main {
 	.footer-copyright {
 		flex: 50%;
 	}
-	.footer-brand,
-	.footer-copyright {
+	.footer-brand {
 		justify-content: flex-start;
 	}
 	.footer-links,
